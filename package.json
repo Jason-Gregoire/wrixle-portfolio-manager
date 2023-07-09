@@ -1,0 +1,29 @@
+{
+  "name": "wrixle",
+  "version": "1.0.0",
+  "description": "Wrixle - Portfolio Management Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack --config webpack.config.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/wrixle.git"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "web3": "^1.5.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.47.0",
+    "webpack-cli": "^4.7.2",
+    "babel-loader": "^8.2.2",
+    "jest": "^27.0.6"
+  }
+}
