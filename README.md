@@ -23,11 +23,11 @@ To run Wrixle locally, follow these steps:
 
 2. Install the dependencies:
 
-```npm install```
+   ```npm install```
 
 3. Start the development server:
 
-```npm start```
+   ```npm start```
 
 4. Open your browser and navigate **to http://localhost:3000** to access the application.
 
