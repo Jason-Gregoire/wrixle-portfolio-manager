@@ -1,0 +1,14 @@
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
