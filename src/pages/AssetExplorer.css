@@ -1,0 +1,25 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.asset {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.asset h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.asset p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+/* Add any additional styling as needed */
