@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import './AccountSettings.css';
 
 const AccountSettings = () => {
   const [name, setName] = useState('');
