@@ -1,0 +1,25 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.trading-chart {
+  margin-bottom: 20px;
+}
+
+.order-form {
+  margin-bottom: 20px;
+}
+
+.trade-history {
+  margin-bottom: 20px;
+}
+
+/* Add additional styling specific to the trading platform */
