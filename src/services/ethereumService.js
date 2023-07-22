@@ -1,7 +1,5 @@
-//This file can contain functions and logic related to interacting with the Ethereum network, such as fetching token balances, transaction data, or other on-chain information.
-
-// Import required libraries
 import Web3 from 'web3';
+import tokenAbi from './path/to/tokenAbi'; // Replace with the correct path to the token ABI
 
 // Initialize Web3 provider
 const web3 = new Web3(window.ethereum);
@@ -32,7 +30,7 @@ export const getTokenBalance = async (tokenAddress, walletAddress) => {
 // Function to fetch transaction history for a specific address
 export const getTransactionHistory = async (walletAddress) => {
   try {
-    const history = await web3.eth.getTransactionsByAddress(walletAddress);
+    const history = await web3.eth.getTransactionReceipt(walletAddress);
     return history;
   } catch (error) {
     console.error('Failed to fetch transaction history:', error);
@@ -49,4 +47,3 @@ export default {
   getTransactionHistory,
   // Other functions...
 };
-
