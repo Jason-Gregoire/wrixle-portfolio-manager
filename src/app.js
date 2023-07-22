@@ -1,4 +1,3 @@
-// sets up the routing and structure of your application by defining the routes and rendering the appropriate components based on the URL
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
