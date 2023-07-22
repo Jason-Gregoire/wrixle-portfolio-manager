@@ -23,13 +23,15 @@ Build the Docker images for the frontend and backend applications:
 
 ```bash
 docker build -t frontend-app:latest ./path/to/frontend
-docker build -t backend-app:latest ./path/to/backend```
+docker build -t backend-app:latest ./path/to/backend
+```
 
 Push the Docker images to the container registry:
 
 ```bash
 docker push registry.example.com/frontend-app:latest
-docker push registry.example.com/backend-app:latest```
+docker push registry.example.com/backend-app:latest
+```
 
 ## Step 3: Create Kubernetes Deployment Manifests
 
@@ -44,13 +46,15 @@ Apply the Kubernetes deployment and service manifests:
 ```bash
 kubectl apply -f frontend-deployment.yaml
 kubectl apply -f backend-deployment.yaml
-kubectl apply -f backend-service.yaml```
+kubectl apply -f backend-service.yaml
+```
 
 Verify that the Kubernetes pods are running and the services are exposed:
 
 ```bash
 kubectl get pods
-kubectl get services```
+kubectl get services
+```
 
 Set up Ingress or load balancer (if applicable) to access the application from outside the cluster.
 
@@ -66,13 +70,15 @@ Perform rolling updates to deploy new versions of the application:
 
 ```bash
 kubectl set image deployment/frontend-app frontend-app=registry.example.com/frontend-app:new_version
-kubectl set image deployment/backend-app backend-app=registry.example.com/backend-app:new_version```
+kubectl set image deployment/backend-app backend-app=registry.example.com/backend-app:new_version
+```
 
 Monitor the update progress using Kubernetes rolling update status:
 
 ```bash
 kubectl rollout status deployment/frontend-app
-kubectl rollout status deployment/backend-app```
+kubectl rollout status deployment/backend-app
+```
 
 ## Step 7: Backup and Recovery
 
