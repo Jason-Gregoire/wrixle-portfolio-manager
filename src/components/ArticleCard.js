@@ -1,5 +1,3 @@
-// File: ArticleCard.js
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import './ArticleCard.css';

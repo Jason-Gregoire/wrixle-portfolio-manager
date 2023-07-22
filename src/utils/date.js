@@ -1,5 +1,4 @@
 // This file can include functions for date manipulation and formatting.
-// date.js
 
 // Format a date in a specific format
 export function formatDate(date, format = 'YYYY-MM-DD') {

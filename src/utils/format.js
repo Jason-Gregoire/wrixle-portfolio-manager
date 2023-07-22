@@ -1,5 +1,4 @@
 // This file can contain utility functions for formatting data or values.
-// format.js
 
 // Format a number with decimal places
 export function formatNumber(number, decimalPlaces = 2) {
@@ -20,7 +19,7 @@ export function formatPercentage(value, decimalPlaces = 2) {
 }
 
 // Format a date in a specific format
-export function formatDate(date, format = 'YYYY-MM-DD') {
+export function formatDateWithCustomFormat(date, format = 'YYYY-MM-DD') {
   const formattedDate = new Intl.DateTimeFormat('en-US', { dateStyle: format }).format(date);
   return formattedDate;
 }

@@ -1,0 +1,23 @@
+.insights-card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.insights-card h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.insights-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.insights-author,
+.insights-date {
+  font-size: 14px;
+  color: #888;
+}

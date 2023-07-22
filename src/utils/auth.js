@@ -1,4 +1,3 @@
-// This file can handle authentication-related functions and methods.
 // Utility functions for authentication
 
 // Function to check if the user is authenticated
@@ -26,7 +25,8 @@ export async function login(username, password) {
       localStorage.setItem('accessToken', data.accessToken);
       return data.user;
     } else {
-      throw new Error('Login failed. Please check your credentials and try again.');
+      const errorMessage = await response.text();
+      throw new Error(errorMessage || 'Login failed. Please check your credentials and try again.');
     }
   } catch (error) {
     throw new Error('An error occurred during login. Please try again later.');
