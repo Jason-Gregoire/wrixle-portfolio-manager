@@ -1,5 +1,4 @@
 // This file can include functions for data validation and input sanitization.
-// validation.js
 
 // Helper function to validate an email address
 export function validateEmail(email) {
@@ -9,7 +8,7 @@ export function validateEmail(email) {
 
 // Helper function to validate a password
 export function validatePassword(password) {
-  // Add your password validation logic here
+  // Add your password validation logic here (e.g., minimum length, uppercase, lowercase, special characters)
   return password.length >= 8;
 }
 
